@@ -56,21 +56,16 @@ Run the program with the required arguments:
 `./philo number_of_philosophers time_to_die time_to_eat time_to_sleep [meals_required]`
 Examples:
 
-`./philo 5 800 200 200`
-
-`./philo 5 800 200 200 7`
-
+`./philo 5 800 200 200` //
+`./philo 5 800 200 200 7`//
 `./philo 1 800 200 200`
+
 The state of each philosopher is printed to the terminal in the following format:
 
 `timestamp_in_ms X has taken a fork`
-
 `timestamp_in_ms X is eating`
-
 `timestamp_in_ms X is sleeping`
-
 `timestamp_in_ms X is thinking`
-
 `timestamp_in_ms X died`
 
 
