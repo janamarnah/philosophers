@@ -41,17 +41,21 @@ Features:
 ### Compilation
 To compile the program, use the provided Makefile. 
 Simply run:
+
 `make`
 This will generate the executable philo in the current directory.
 For the bonus part (processes and semaphores):
+
 `make bonus`
 This will generate the executable philo_bonus.
 ### Installation
 No external library needs to be installed. The project only relies on the **pthread** library, which is available by default on Linux and macOS systems used at 42. A standard C toolchain (`gcc` and `make`) is all that is required.
 ### Execution
 Run the program with the required arguments:
+
 `./philo number_of_philosophers time_to_die time_to_eat time_to_sleep [meals_required]`
 Examples:
+
 `./philo 5 800 200 200`
 
 `./philo 5 800 200 200 7`
