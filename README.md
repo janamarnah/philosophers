@@ -4,7 +4,7 @@
 # philosophers
 ## Description
 **philosophers** is a concurrency project developed in C, based on the classic **Dining Philosophers Problem** formulated by Edsger Dijkstra.  
-The goal of the project is to simulate a group of philosophers sitting around a table who alternate between eating, sleeping, and thinking, while sharing a limited number of forks — all without any philosopher starving to death, and while respecting strict timing rules.
+The goal of the project is to simulate a group of philosophers sitting around a table who alternate between eating, sleeping, and thinking, while sharing a limited number of forks, all without any philosopher starving to death, and while respecting strict timing rules.
 This project introduces fundamental concepts of:
 - Thread and process management
 - Mutexes and semaphores
@@ -13,13 +13,15 @@ This project introduces fundamental concepts of:
 - Precise time handling
 - Argument parsing and validation
 Each philosopher needs two forks to eat, and forks are shared between neighbors. The challenge is to coordinate access to these shared resources so the simulation runs correctly and safely in parallel.
+
 Arguments:
 Argument                    Description
 number_of_philosophers      Number of philosophers, and also the number of forks
 time_to_die                 Time (ms) a philosopher can go without eating before dying
 time_to_eat                 Time (ms) it takes a philosopher to eat
 time_to_sleep               Time (ms) a philosopher spends sleeping
-meals_required (optional)   Simulation stops once every philosopher has eaten this many times
+meals_required              Simulation stops once every philosopher has eaten this many times
+
 Features:
 - One thread per philosopher (mandatory), one process per philosopher (bonus)
 - Forks protected by mutexes (mandatory) / semaphores (bonus)
